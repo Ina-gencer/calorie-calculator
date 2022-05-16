@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор калорий</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+    <h1>Калькулятор-счётчик калорий на день</h1>
+    <form>
+         
+
+        <label >Вес</label>
+        <input id="weight" type="text" placeholder="укажите в кг" class="padding">
+
+        
+
+        <label>Образ жизни</label>
+        <select class="padding" id="selects" >
+            <option value="0.00" disabled >выберите нужный вариант</option>
+            <option value="1.20"selected >сидячий и малоподвижный</option>
+            <option value="1.375" >легкая активность (упражнения 1-3 раза в неделю)</option>
+            <option value="1.55">средняя активность(тренировки 3-5 раз в неделю)</option>
+            <option value="1.725">высокая активность(тренировки каждый день)</option>
+            <option value="1.90">экстремально-высокая активность(профессиональный спорт)</option>
+        </select>
+        
+<br>
+        <button class="btn" id="btnTwo">РАССЧИТАТЬ</button>
+    </form>
+<hr>
+    <div class="box">
+        <div class="numbers">
+            <p>Cуточной нормa:</p>
+            <span id="show"></span>
+            <span>ккл/день</span>
+        </div>
+    </div>
+</div>
+<br>
+
+
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

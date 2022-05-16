@@ -1,0 +1,100 @@
+body {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    color: #F0E9D2;
+    background-color: #d6d6d6;
+}
+
+#container {
+    background-color: rgb(24, 29, 49, 0.7);
+    flex-wrap: wrap;
+    width: 35%;
+    height: 80vh;
+    margin: 20px 50px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 5px -5px 20px 10px #F0E9D2;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;  
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #678983;
+}
+
+.btn:hover {
+    background-color: #BC8CF2;
+}
+.padding {
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.padding:hover {
+    background-color: #F0E9D2;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+.numbers {
+    display: none;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #F0E9D2;
+
+}
+
+
+@media all and (max-width: 1100px) {
+    #container {
+        height: 60vh;
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #container {
+        height: 50vh;
+        width: 50%;
+    }
+}
+
+
+@media all and (max-width: 500px) {
+    #container {
+        width: 80%;
+        height: 80%;
+        margin: 10px 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
